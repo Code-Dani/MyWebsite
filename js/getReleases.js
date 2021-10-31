@@ -9,6 +9,7 @@ function getReleases(release){
         if(get.status != 200){
             console.log(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
         }else{
+            document.getElementById("returnButton").removeAttribute("hidden");
             var JSON_object = JSON.parse(get.response);
             console.log(JSON_object);
             //LATEST RELEASE WILL ALWAYS BE [0] -> order: from latest to oldest
@@ -60,4 +61,9 @@ function getReleases(release){
     get.onerror = function() {
         alert("error while loading informations");
     }
+}
+
+
+function returnButton(){
+    location.reload(true);
 }

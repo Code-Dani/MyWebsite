@@ -3,9 +3,15 @@
 
     <head>
         <meta charset="utf-8">
+        <meta property="og:title" content="Code-Dani repository archive">
         <meta name="description" content="Code-Dani personal website and showroom for projects uploaded on Github">
         <meta name="keywords" content="IT, programmer, Code-Dani, student, developer">
-        <title>Code-Dani repos</title>
+        <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <meta HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+        <meta property="og:image" content="/img/logo.png">
+        <meta property="og:description" content="Code-Dani personal website and showroom for projects uploaded on Github">
+        <meta property="og:url" content="http://effect-remover.unaux.com/">
+        <title>Code-Dani archive</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
 
@@ -35,20 +41,25 @@
     </head>
 
     <body class="text-center" onload="initialize();" >
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" >
+
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <header class="masthead mb-auto">
                 <div class="inner">
-                    <h3 class="masthead-brand">Code-Dani</h3>
+                    <h3 class="masthead-brand"><a href="http://effect-remover.unaux.com/" style="text-decoration: none;">Code-Dani</a></h3>
                     <nav class="nav nav-masthead justify-content-center">
                         <a class="nav-link " href="../index.html">Home</a>
-                        <a class="nav-link active" href="#">Projects</a>
+                        <a class="nav-link active" href="Projects.html">Projects</a>
                         <a class="nav-link" href="contacts.html">Contact</a>
                     </nav>
                 </div>
             </header>
+            <button id="returnButton" type="button" class="btn btn-secondary" style="height:40px; position:absolute; margin-top:7em; margin-left: -2.5em;" hidden onclick="returnButton();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"></path>
+                </svg>
+            </button>
+            <main role="main" id="download-main" class="inner cover" style="width:100%; height:100%; overflow:auto; padding:5px; margin-top:10%;">
 
-            <main role="main" id="download-main" class="inner cover" style="width:100%;height:100%;overflow:auto;padding:5px;margin-top:10%;">
-                
             </main>
 
             <footer class="masterfoot mt-auto">
@@ -57,5 +68,6 @@
                 </div>
             </footer>
         </div>
+
     </body>
 </html>
